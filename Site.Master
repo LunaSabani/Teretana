@@ -51,7 +51,9 @@
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
                         <li><a runat="server" href="~/">Prikaz</a></li>
-                        <li><a runat="server" href="~/About">About</a></li>
+                        <li><a runat="server" href="~/About">Dodaj clana</a></li>
+                        <li><a runat="server" href="~/UnosTeretane">Dodaj teretanu</a></li>
+                        <li><a runat="server" href="~/Dodajtrenera">Dodaj trenera</a></li>
                         <li><a runat="server" href="~/Contact">Contact</a></li>
                     </ul>
                 </div>
