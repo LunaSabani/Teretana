@@ -17,7 +17,7 @@
 <p>
     Grad:<asp:TextBox ID="TextBox4" runat="server" Height="18px"></asp:TextBox>
     <br />
-    <asp:Button ID="Button1" runat="server" Text="Unesi teretanu" BackColor="#FFCCFF" BorderColor="White" BorderStyle="Double" />
+    <asp:Button ID="Button1" runat="server" Text="Unesi teretanu" BackColor="#FFCCFF" BorderColor="White" BorderStyle="Double" OnClick="Button1_Click" />
 </p></div>
     
    
