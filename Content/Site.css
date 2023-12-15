@@ -2,10 +2,9 @@
 body {
     padding-top: 50px;
     padding-bottom: 20px;
-   
-    background-image:linear-gradient(rgba(4,9,30,0.4),rgba(4,9,30,0.4)),url(../Slike/teretanica.jpg);
-    background-repeat:no-repeat;
-    background-size:contain;
+    background-image: url(../Slike/risen-wang-20jX9b35r_M-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /* Wrapping element */

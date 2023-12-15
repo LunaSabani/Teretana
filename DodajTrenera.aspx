@@ -2,25 +2,25 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     
 
-    <div >
+    <div class="jumbotron" >
            <p>
-       Ime;<asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+       Ime:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
    </p>
    <p>
-       Prezime:<asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+       Prezime:&nbsp;&nbsp;&nbsp;&nbsp; <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
    </p>
    <p>
-       Kontakt:<asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
+       Kontakt:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
    </p>
    <p>
-       Pol:<asp:DropDownList ID="DropDownList1" runat="server">
+       Pol:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <asp:DropDownList ID="DropDownList1" runat="server">
        </asp:DropDownList>
    </p>
    <p>
-       Teretana:<asp:DropDownList ID="DropDownList2" runat="server">
+       Teretana:&nbsp;&nbsp;&nbsp; <asp:DropDownList ID="DropDownList2" runat="server">
        </asp:DropDownList>
    </p>
-   <asp:Button ID="Button1" runat="server" BackColor="#FFCCFF" Text="Unesi" BorderColor="White" BorderStyle="Double" Height="26px" />
+   <asp:Button ID="Button1" runat="server" BackColor="#FFCCFF" Text="Unesi" BorderColor="Black" BorderStyle="Solid" Height="31px" Width="74px" />
    <br />
     </div>
  

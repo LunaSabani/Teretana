@@ -10,7 +10,7 @@
           <br />
           &nbsp; Teretane&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <br />
-        <asp:DropDownList ID="DropDownList2" runat="server" BackColor="#FFCCFF" DataSourceID="SqlDataSource2" DataTextField="Id" DataValueField="Id">
+        <asp:DropDownList ID="DropDownList2" runat="server" BackColor="#FFCCFF">
         </asp:DropDownList>
         <asp:DropDownList ID="DropDownList3" runat="server" BackColor="#FFCCFF">
         </asp:DropDownList>
@@ -18,18 +18,11 @@
         <br />
           <br />
           <br />
-        <asp:Button ID="Button1" runat="server" Text="PRIKAZI" BackColor="#FFCCFF" BorderColor="White" BorderStyle="Double" OnClick="Button1_Click" />
+        <asp:Button ID="Button1" runat="server" Text="PRIKAZI" BackColor="#FFCCFF" BorderColor="Black" BorderStyle="Solid" OnClick="Button1_Click" />
         <br />
           <br />
           <br />
-        <asp:GridView ID="GridView1" runat="server" Width="605px" BackColor="#FFCCFF" BorderColor="#999999" BorderStyle="Solid" BorderWidth="3px" CellPadding="4" CellSpacing="2" ForeColor="Black" AutoGenerateColumns="False" DataSourceID="SqlDataSource1" Height="204px">
-            <Columns>
-                <asp:BoundField DataField="Id" HeaderText="Id" InsertVisible="False" ReadOnly="True" SortExpression="Id" />
-                <asp:BoundField DataField="Naziv" HeaderText="Naziv" SortExpression="Naziv" />
-                <asp:BoundField DataField="Adresa" HeaderText="Adresa" SortExpression="Adresa" />
-                <asp:BoundField DataField="Broj_telefona" HeaderText="Broj_telefona" SortExpression="Broj_telefona" />
-                <asp:BoundField DataField="Grad" HeaderText="Grad" SortExpression="Grad" />
-            </Columns>
+        <asp:GridView ID="GridView1" runat="server" Width="605px" BackColor="#FFCCFF" BorderColor="#999999" BorderStyle="Solid" BorderWidth="3px" CellPadding="4" CellSpacing="2" ForeColor="Black" AutoGenerateColumns="False" Height="204px">
             <FooterStyle BackColor="#CCCCCC" />
             <HeaderStyle BackColor="Black" Font-Bold="True" ForeColor="White" />
             <PagerStyle BackColor="#CCCCCC" ForeColor="Black" HorizontalAlign="Left" />
