@@ -10,9 +10,9 @@
           <br />
           &nbsp; Teretane&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <br />
-        <asp:DropDownList ID="DropDownList2" runat="server" BackColor="#FFCCFF">
+        <asp:DropDownList ID="DropDownList2" runat="server" BackColor="#FFCCFF" AutoPostBack="True" OnSelectedIndexChanged="DropDownList2_SelectedIndexChanged">
         </asp:DropDownList>
-        <asp:DropDownList ID="DropDownList3" runat="server" BackColor="#FFCCFF">
+        <asp:DropDownList ID="DropDownList3" runat="server" BackColor="#FFCCFF" AutoPostBack="True">
         </asp:DropDownList>
         <br />
         <br />
