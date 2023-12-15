@@ -12,7 +12,8 @@
           <br />
         <asp:DropDownList ID="DropDownList2" runat="server" BackColor="#FFCCFF" DataSourceID="SqlDataSource2" DataTextField="Id" DataValueField="Id">
         </asp:DropDownList>
-        <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:TeretanaConnectionString %>" SelectCommand="SELECT [Id] FROM [Teretana]"></asp:SqlDataSource>
+        <asp:DropDownList ID="DropDownList3" runat="server" BackColor="#FFCCFF">
+        </asp:DropDownList>
         <br />
         <br />
           <br />

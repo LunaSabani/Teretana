@@ -3,9 +3,9 @@ body {
     padding-top: 50px;
     padding-bottom: 20px;
    
-    background-image:linear-gradient(rgba(4,9,30,0.3),rgba(4,9,30,0.3)),url(../Slike/teretanica.jpg);
+    background-image:linear-gradient(rgba(4,9,30,0.4),rgba(4,9,30,0.4)),url(../Slike/teretanica.jpg);
     background-repeat:no-repeat;
-    background-size:cover;
+    background-size:contain;
 }
 
 /* Wrapping element */
