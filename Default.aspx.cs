@@ -79,29 +79,37 @@ namespace WebApplication6
         {
             using (SqlConnection connection = new SqlConnection(Konekcija.constring))
             {
-                connection.Open();
-                SqlCommand cmd = new SqlCommand("SELECT id, Ime, Prezime FROM Trener", connection);
+                SqlCommand cmd = new SqlCommand("SELECT id, Ime, Prezime FROM Clan", connection);
 
                 if (!string.IsNullOrEmpty(DropDownList2.SelectedValue))
                 {
-                    cmd.CommandText += " WHERE ID = @ID_teretane";
+                    cmd.CommandText += " WHERE id_teretane = @ID_teretane";
                     cmd.Parameters.AddWithValue("@ID_teretane", DropDownList2.SelectedValue);
                 }
 
                 if (!string.IsNullOrEmpty(DropDownList3.SelectedValue))
                 {
-                    cmd.CommandText += " AND id= @id_trener";
+                    cmd.CommandText += " AND id_trenera= @id_trener";
                     cmd.Parameters.AddWithValue("@id_trener", DropDownList3.SelectedValue);
                 }
+                connection.Open();
 
                 SqlDataAdapter da = new SqlDataAdapter(cmd);
                 DataTable dt = new DataTable();
                 da.Fill(dt);
-
+                if (dt.Rows.Count < 1)
+                {
+                    Label1.Text = "Clanovi nepostoje u ovim uslovima";
+                }
                 GridView1.DataSource = dt;
                 GridView1.DataBind();
                 cmd.Connection.Close();
             }
+        }
+
+        protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

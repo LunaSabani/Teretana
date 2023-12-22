@@ -14,13 +14,15 @@
    </p>
    <p>
        Pol:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <asp:DropDownList ID="DropDownList1" runat="server">
+           <asp:ListItem>M</asp:ListItem>
+           <asp:ListItem>Z</asp:ListItem>
        </asp:DropDownList>
    </p>
    <p>
-       Teretana:&nbsp;&nbsp;&nbsp; <asp:DropDownList ID="DropDownList2" runat="server">
+       Teretana:&nbsp;&nbsp;&nbsp; <asp:DropDownList ID="DropDownList2" runat="server" OnSelectedIndexChanged="DropDownList2_SelectedIndexChanged">
        </asp:DropDownList>
    </p>
-   <asp:Button ID="Button1" runat="server" BackColor="#FFCCFF" Text="Unesi" BorderColor="Black" BorderStyle="Solid" Height="31px" Width="74px" />
+   <asp:Button ID="Button1" runat="server" BackColor="#FFCCFF" Text="Unesi" BorderColor="Black" BorderStyle="Solid" Height="31px" Width="74px" OnClick="Button1_Click" />
    <br />
     </div>
  

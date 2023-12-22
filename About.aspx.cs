@@ -15,7 +15,7 @@ namespace WebApplication6
             if (!IsPostBack)
             {
                 PopuniTeretane();
-
+                PopuniTrenera();
             }
 
         }
@@ -51,6 +51,7 @@ namespace WebApplication6
                     cmd.Parameters.AddWithValue("@TeretanaID", DropDownList2.SelectedValue);
 
                     SqlDataReader reader = cmd.ExecuteReader();
+                   
 
                     DropDownList3.DataSource = reader;
                     DropDownList3.DataTextField = "Naziv";
@@ -72,32 +73,30 @@ namespace WebApplication6
                 cmd.Parameters.AddWithValue("@Ime", TextBox1.Text);
                 cmd.Parameters.AddWithValue("@Prezime", TextBox2.Text);
                 cmd.Parameters.AddWithValue("@Kontakt", TextBox3.Text);
-                cmd.Parameters.AddWithValue("@DatumRodjenja",  DateTime.Parse(TextBox4.Text));
+                cmd.Parameters.AddWithValue("@DatumRodjenja", TextBox4.Text);
                 cmd.Parameters.AddWithValue("@Pol", DropDownList1.SelectedValue);
 
-                if (!string.IsNullOrEmpty(DropDownList2.SelectedValue))
-                {
+                
                     cmd.Parameters.AddWithValue("@ID_teretane", DropDownList2.SelectedValue);
-                }
-                else
-                {
-                    cmd.Parameters.AddWithValue("@ID_teretane", DBNull.Value);
-                }
 
-                if (!string.IsNullOrEmpty(DropDownList3.SelectedValue))
-                {
-                    cmd.Parameters.AddWithValue("@ID_trenera", DropDownList3.SelectedValue);
-                }
-                else
-                {
-                    cmd.Parameters.AddWithValue("@ID_trenera", DBNull.Value);
-                }
 
-                cmd.ExecuteNonQuery();
-                cmd.Connection.Close();
+
+                    if (!string.IsNullOrEmpty(DropDownList3.SelectedValue))
+                    {
+                        cmd.Parameters.AddWithValue("@ID_trenera", DropDownList3.SelectedValue);
+                    }
+                    else
+                    {
+                        cmd.Parameters.AddWithValue("@ID_trenera", DBNull.Value);
+                    }
+
+                    cmd.ExecuteNonQuery();
+                    cmd.Connection.Close();
+
+
+                    Response.Redirect("Default.aspx");
+                
             }
-
-            Response.Redirect("Default.aspx");
         }
     
     protected void DropDownList2_SelectedIndexChanged(object sender, EventArgs e)
@@ -109,6 +108,11 @@ namespace WebApplication6
         protected void Button1_Click(object sender, EventArgs e)
         {
             DodajClanaUBazu();
+
+        }
+
+        protected void DropDownList2_SelectedIndexChanged1(object sender, EventArgs e)
+        {
 
         }
     }

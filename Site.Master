@@ -46,12 +46,12 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" runat="server" href="~/">Application name</a>
+                    <a class="navbar-brand" runat="server" href="~/">Teretana</a>
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
                         <li><a runat="server" href="~/">Prikaz</a></li>
-                        <li><a runat="server" href="~/About">Dodaj clana</a></li>
+                        <li><a runat="server" href="~/About.aspx">Dodaj clana</a></li>
                         <li><a runat="server" href="~/UnosTeretane">Dodaj teretanu</a></li>
                         <li><a runat="server" href="~/Dodajtrenera">Dodaj trenera</a></li>
                         <li><a runat="server" href="~/Contact">Contact</a></li>
@@ -64,7 +64,6 @@
             </asp:ContentPlaceHolder>
             <hr />
             <footer>
-                <p>&copy; <%: DateTime.Now.Year %> - My ASP.NET Application</p>
             </footer>
         </div>
 
